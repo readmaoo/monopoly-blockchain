@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monopoly Web3</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+<h1>Monopoly Web3</h1>
+
+<button id="connectWallet">Connect Wallet</button>
+<p>Wallet: <span id="wallet">-</span></p>
+
+<hr />
+
+<button id="createGame">Create Game</button>
+<input id="gameIdInput" placeholder="Game ID" />
+<button id="joinGame">Join Game</button>
+<button id="startGame">Start Game</button>
+
+<p>Current Game ID: <b id="currentGameId">-</b></p>
+
+<hr />
+
+<button id="rollDice">Roll Dice</button>
+
+<p>Position: <span id="position">0</span></p>
+<p>Balance: <span id="balance">0</span></p>
+
+<input id="propertyId" placeholder="Property ID" />
+<button id="buyProperty">Buy Property</button>
+
+<hr />
+
+<h3>Game Board</h3>
+<div id="board" class="board"></div>
+
+<hr />
+
+<h3>Game Log</h3>
+<ul id="gameLog"></ul>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
